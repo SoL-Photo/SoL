@@ -6,7 +6,7 @@
                 <div id="gallery">
                     <ul>
                         <li>
-                            <a href="people.php">
+                            <a href="/people">
                                 <div id="people">
                                     <div class="tint">
                                         <h2>People</h2>
@@ -16,7 +16,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="places.php">
+                            <a href="/places">
                                 <div id="places">
                                     <div class="tint">
                                         <h2>Places</h2>
@@ -26,7 +26,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="nature.php">
+                            <a href="/nature">
                                 <div id="nature">
                                     <div class="tint">
                                         <h2>Nature</h2>
@@ -36,7 +36,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="blackwhite.php">
+                            <a href="/blackwhite">
                                 <div id="blackwhite">
                                     <div class="tint">
                                         <h2>B & W</h2>

@@ -19,7 +19,7 @@ class Application extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->data = array();
-        $this->data['pagetitle'] = 'hello world??';
+        $this->data['pagetitle'] = 'Sliver of Light Photography';
     }
     
     /**

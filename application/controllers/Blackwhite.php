@@ -37,16 +37,15 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Blackwhite extends CI_Controller {
+class Blackwhite extends Application {
 
 	/**
 	 * Index Page for this controller.
 	 */
 	public function index()
 	{
-		$this->load->view('blackwhite');
-//        $this->data['pagebody'] = 'blackwhite';
-//        $this->render();
+            $this->data['pagebody'] = 'blackwhite';
+            $this->render();
 	}
 }
 

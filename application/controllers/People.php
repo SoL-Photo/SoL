@@ -37,16 +37,15 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class People extends CI_Controller {
+class People extends Application {
 
 	/**
 	 * Index Page for this controller.
 	 */
 	public function index()
 	{
-		$this->load->view('people');
-//        $this->data['pagebody'] = 'people';
-//        $this->render();
+            $this->data['pagebody'] = 'people';
+            $this->render();
 	}
 }
 

@@ -37,16 +37,15 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Nature extends CI_Controller {
+class Nature extends Application {
 
 	/**
 	 * Index Page for this controller.
 	 */
 	public function index()
 	{
-		$this->load->view('nature');
-//        $this->data['pagebody'] = 'nature';
-//        $this->render();
+            $this->data['pagebody'] = 'nature';
+            $this->render();
 	}
 }
 
