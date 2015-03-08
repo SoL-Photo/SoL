@@ -12,6 +12,10 @@ class Subgalleries extends Application {
         $this->data['pagebody'] = 'people';
         $this->render();
     }
-
+    
+    public function blackwhite(){
+        $this->data['pagebody'] = 'blackwhite';
+        $this->render();
+    }
 }
 
