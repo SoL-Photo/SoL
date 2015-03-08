@@ -17,5 +17,10 @@ class Subgalleries extends Application {
         $this->data['pagebody'] = 'blackwhite';
         $this->render();
     }
+    
+    public function places(){
+        $this->data['pagebody'] = 'places';
+        $this->render();
+    }
 }
 
