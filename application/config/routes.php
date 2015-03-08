@@ -89,5 +89,10 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+//Routes for subgalleries
+$route['people'] = "Subgalleries/people";
+$route['nature'] = "Subgalleries/nature";
+$route['places'] = "Subgalleries/places";
+$route['blackwhite'] = "Subgalleries/blackwhite";
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
