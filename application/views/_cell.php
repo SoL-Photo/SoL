@@ -16,11 +16,11 @@ Converted to be a new view fragment template for the photo galleries
  */
 ?>
 
-<a href="/assets/images/{foldername}/{filename}" 
+<a href="images/{foldername}/{filename}" 
    data-lightbox="{foldername}" 
    title="{description} | {location} | {date_taken}">
     
-        <img src="/assets/images/{foldername}/thumb_{filename}" 
+        <img src="images/{foldername}/thumb_{filename}" 
              width="120" height="120" 
              class="thumb trans1" 
              alt="{category} Gallery">

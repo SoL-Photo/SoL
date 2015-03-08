@@ -3,8 +3,6 @@
 /*==== TAG SELECTORS ====*/
 /*==== CROSS-PAGE ====*/
 /*==== HOME ====*/
-/*==== ADMIN ====*/
-/*==== BLOG ====*/
 /*==== TABLE ====*/
 /*==== BIO ====*/
 /*==== SIGN IN ====*/
@@ -17,13 +15,13 @@
 /* Import "Julius Sans One" */
 @font-face {
 	font-family: "Julius Sans One";
-	src: url('/assets/fonts/JuliusSansOne-Regular.ttf');
+	src: url('../fonts/JuliusSansOne-Regular.ttf');
 }
 
 /* Import "Scriptina" */
 @font-face {
 	font-family: Scriptina;
-	src: url('/assets/fonts/scriptina.regular.ttf');
+	src: url('../fonts/scriptina.regular.ttf');
 	}
 
 /* set default fonts */
@@ -88,7 +86,7 @@ of everything. */
 	height: 160px;
 	width: 160px;
 	position: absolute;
-	background: url('/assets/images/logo2.png');
+	background: url('../images/logo2.png');
 	background-size: 160px 160px;
 	border: 2px solid #900;
 	z-index: 100;
@@ -101,9 +99,6 @@ of everything. */
 	border-radius: 130px;
 	border-bottom-left-radius: 0;
 }
-#logo p {
-	visibility: hidden;
-	}
 
 /* Sets width of 1024px and height 75px; white background 
 so blog posts don't show through. */
@@ -121,16 +116,20 @@ events in Internet explorer.*/
 #title {
 	width: 448px;
 	height: 92px;
-	background: url('/assets/images/title.png');
+	background: url('../images/title.png');
 	background-size: 448px 92px;
 	position: absolute;
 	left: 170px;
 	top: 0;
 	pointer-events: none;
 	}
+	
+title {
+	text-align: center;
+	}
 
 #titleLink {
-	color: rgba(255, 255, 255, 0);
+	
 	width: 448px;
 	height: 76px;
 	position: absolute;
@@ -227,7 +226,6 @@ initial state is slower, at 1s.*/
 /* The generic content window that holds the content for each page.*/
 #content {
 	width: 1024px;
-	height: 440px;
 	margin: 0;
 	padding: 0;	
 	position: relative;
@@ -235,7 +233,6 @@ initial state is slower, at 1s.*/
 
 #gallerycontainer {
 	height: 380px;
-	overflow: auto;
 }
 
 /* The text "Select a gallery" in the gallery page.*/
@@ -254,10 +251,10 @@ line between itself and #content.*/
 #footer {
 	border-top: 1px solid #bbbbbb;
 	width: 400px;
-	height: 400px;
+	height: 5px;
 	margin-top: 5px;
 	margin: 0 auto;
-	color: #999;
+	color: #aaaaaa;
 }
 
 /* individual selector for <p> elements just in case we want to add other elements
@@ -271,14 +268,10 @@ in the future without messing everything up.*/
 	}
 
 #welcomeHeader {
-	position: fixed;
-	top: 0;
-	right: 0;
-	font-size: .9em;
-	background: #900;
-	color: white;
-	padding: 5px;
+	display: none;
 	}
+	
+	
 	
 	
 	
@@ -288,14 +281,16 @@ in the future without messing everything up.*/
 /* The photo on the main page index.html. Added photo via css. */
 #photo {
 	width: 100%;
-	height: 100%;
+	height: 440px;
 	margin: 0;
 	padding: 0;
-    background:url('/assets/images/falsecreek_small.jpg');
+	background:url('../images/falsecreek_small.jpg');
 }
 
 
-/*================================================== ADMIN ======================================================================*/
+
+
+
 
 
 /*================================================== BLOG ======================================================================*/
@@ -322,12 +317,10 @@ down to the bottom of the screen. *
 #blogcontent {
 	position: absolute;
 	top: 57px;
-	height: 100%;
 	width: 1024px;
 	/*border-bottom: 1px dashed #000000;*/
 	margin: 0;
 	padding: 0;
-	overflow: auto;
 	}
 
 /* Each individual post. Centered, with top and bottom margins to separate each post.*/
@@ -449,7 +442,7 @@ tr:nth-child(2n) {
 	padding: 0;
 	position: relative;
 	overflow: hidden;
-	background: url('/assets/images/portrait2_small.jpg');
+	background: url('../images/portrait2_small.jpg');
 }
 
 #bio p {
@@ -472,7 +465,7 @@ tr:nth-child(2n) {
 /*================================================== SIGN IN ======================================================================*/
 
 .signInBackground {
-	background: url('/assets/images/signin_bg.jpg');
+	background: url('../images/signin_bg.jpg');
 	}
 /* The "Sign in" container. Gets darker when the "Register" div comes down.*/
  #signInContainer {
@@ -524,11 +517,6 @@ tr:nth-child(2n) {
 	-o-transition: all .5s;
 	transition: all .5s;
 	z-index: 100;
-	}
-	
-.button a p {
-	margin-top: 9px;
-	font-size: .85em;
 	}
 	
 /* When targeted, registerContainer will drop down.*/
@@ -644,12 +632,10 @@ form label {
 
 /* contact info container. */
 #contact {
-	width: 1024px;
-	height: 100%;
+	width: 580px;
 	margin: auto;
 	text-align: center;
 	line-height: 150%;
-	background: url('/assets/images/contact_bg.jpg');
 	}
 
 /* social media icons container */
@@ -689,8 +675,7 @@ form label {
 absolutely positioned inside of the container. Height is set to span from
 top to bottom.*/
 #gallery {
-	height: 399px;
-	padding-top: 1px;
+	padding-top: 50px;
 	position: relative;
 	font-family: 'Julius Sans One', 'Trebuchet MS', Arial, sans-serif;
 	}
@@ -700,13 +685,11 @@ top to bottom.*/
 /* Height is stretched from top to bottom through absolutely positioned attributes.
 Overflow: hidden to temporarily crop text above the columns. */
 #gallery ul {
-	height: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0;
 	width: 1024px;
 	padding: 0;
-	overflow: hidden;
 	}
 
 /* The individual gallery links. Floated left to remove gaps between columns.
@@ -714,7 +697,6 @@ Height spans entire gallery container. */
 #gallery li{
 	float: left;
 	list-style-type: none;
-	height: 100%;
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
 	-o-transition: all 1s;
@@ -729,25 +711,6 @@ gallery is being selected.*/
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 	transition: all .5s;
-	}
-	
-/* Text in the middle of each gallery column. Temporarily disabled for further 
-review. */
-#gallery h2 {
-	margin: 0;
-	color: #ffffff;
-	font-size: 2.5em;
-	text-align: center;
-	padding-top: 50%;
-	line-height: 150%;
-	position: relative;
-	height: 100%;
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	-o-transition: all 1s;
-	transition: all 1s;
-	
-	display: none;
 	}
 
 #gallery h2:hover {
@@ -782,31 +745,31 @@ REMEMBER TO PROPERLY SIZE IMAGES IN PHOTOSHOP FOR FINAL VERSION!!!*/
 
 #people {
 	width: 256px;
-	height: 100%;
-	background: url('/assets/images/people_cover.jpg');
+	height: 440px;
+	background: url('../images/people_cover.jpg');
 	background-size: 293px 440px;
 	position: relative;
 }
 #places {
 	width: 256px;
-	height: 100%;
-	background: url('/assets/images/places_cover.jpg') -30px 0;
+	height: 440px;
+	background: url('../images/places_cover.jpg') -30px 0;
 	background-size: 293px 440px;
 	position: relative;
 }
 #nature {
 	width: 256px;
-	height: 100%;
+	height: 440px;
 	background-color: green;
-	background: url('/assets/images/nature_cover.jpg');
+	background: url('../images/nature_cover.jpg');
 	background-size: 293px 440px;
 	position: relative;
 }
 #blackwhite {
 	width: 256px;
-	height: 100%;
+	height: 440px;
 	background-color: blue;
-	background: url('/assets/images/blackwhite_cover.jpg');
+	background: url('../images/blackwhite_cover.jpg');
 	background-size: 293px 440px;
 	position: relative;
 }

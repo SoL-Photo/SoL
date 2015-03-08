@@ -33,9 +33,9 @@ CREATE TABLE IF NOT EXISTS `photos` (
   `description` varchar(128),
   `location` varchar(128) NOT NULL,
   `date_taken` varchar(16),
-  `upload_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  `upload_date` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT = 1000;
 
 --
 -- Dumping data for table `images`
@@ -43,35 +43,35 @@ CREATE TABLE IF NOT EXISTS `photos` (
 
 
 INSERT INTO `photos` 
-(`filename`, `foldername`, `category`, `description`, `location`, `date_taken`) 
+(`filename`, `foldername`, `category`, `description`, `location`, `date_taken`, `upload_date`) 
 VALUES
-  (   'bw001.jpg', 'blackwhite', 'Black & White', 'Up Above the Clouds', 'Grouse Mountain, B.C.', NULL)
-, (   'bw002.jpg', 'blackwhite', 'Black & White', 'Black Tusk', 'Whistler, B.C.', NULL)
-, (   'bw003.jpg', 'blackwhite', 'Black & White', 'Moon Rise', 'Whistler, B.C.', NULL)
-, (   'bw004.jpg', 'blackwhite', 'Black & White', NULL, 'Whistler, B.C.', NULL)
-, (   'bw005.jpg', 'blackwhite', 'Black & White', NULL, 'Whistler, B.C.', NULL)
-, (   'bw006.jpg', 'blackwhite', 'Black & White', NULL, 'Whistler, B.C.', NULL)
-, (   'bw007.jpg', 'blackwhite', 'Black & White', 'Alexander Falls', 'Callahan Valley (near Whistler), B.C.', NULL)
-, (   'bw008.jpg', 'blackwhite', 'Black & White', 'Gnarly', NULL, NULL)
-, (   'bw009.jpg', 'blackwhite', 'Black & White', 'Iona Beach', NULL, NULL)
-, (   'bw010.jpg', 'blackwhite', 'Black & White', 'A Lone Tree', 'Vanier Park, B.C.', NULL)
-, (   'bw011.jpg', 'blackwhite', 'Black & White', 'Come Into My Parlour', NULL, NULL)
-, (   'bw012.jpg', 'blackwhite', 'Black & White', 'Dunkin Duck', NULL, NULL)
-, (   'bw013.jpg', 'blackwhite', 'Black & White', NULL, 'Astoria, OR.', NULL)
-, (   'bw014.jpg', 'blackwhite', 'Black & White', 'Through the Looking Glass', 'Vanier Park, B.C.', NULL)
-, (   'bw015.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL)
-, (   'bw016.jpg', 'blackwhite', 'Black & White', NULL, 'Mulkiteo Ferry Terminal, WA', NULL)
-, (   'bw017.jpg', 'blackwhite', 'Black & White', 'Lion''s Gate Bridge (long exposure)', 'Vancouver, B.C.', NULL)
-, (   'bw018.jpg', 'blackwhite', 'Black & White', 'Lion''s Gate Bridge', 'Vancouver, B.C.', NULL)
-, (   'bw019.jpg', 'blackwhite', 'Black & White', 'Wired Up', NULL, NULL)
-, (   'bw020.jpg', 'blackwhite', 'Black & White', 'Mop Head', NULL, NULL)
-, (   'bw021.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL)
-, (   'bw022.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL)
-, (   'bw023.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL)
-, (   'bw024.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL)
-, (   'bw025.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL)
-, (   'bw026.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL)
-, (   'bw027.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL)
+  (   'bw001.jpg', 'blackwhite', 'Black & White', 'Up Above the Clouds', 'Grouse Mountain, B.C.', NULL, '2015-01-01')
+, (   'bw002.jpg', 'blackwhite', 'Black & White', 'Black Tusk', 'Whistler, B.C.', NULL, '2015-01-01')
+, (   'bw003.jpg', 'blackwhite', 'Black & White', 'Moon Rise', 'Whistler, B.C.', NULL, '2015-01-01')
+, (   'bw004.jpg', 'blackwhite', 'Black & White', NULL, 'Whistler, B.C.', NULL, '2015-01-01')
+, (   'bw005.jpg', 'blackwhite', 'Black & White', NULL, 'Whistler, B.C.', NULL, '2015-01-01')
+, (   'bw006.jpg', 'blackwhite', 'Black & White', NULL, 'Whistler, B.C.', NULL, '2015-01-01')
+, (   'bw007.jpg', 'blackwhite', 'Black & White', 'Alexander Falls', 'Callahan Valley (near Whistler), B.C.', NULL, '2015-01-01')
+, (   'bw008.jpg', 'blackwhite', 'Black & White', 'Gnarly', NULL, NULL, '2015-01-01')
+, (   'bw009.jpg', 'blackwhite', 'Black & White', 'Iona Beach', NULL, NULL, '2015-01-01')
+, (   'bw010.jpg', 'blackwhite', 'Black & White', 'A Lone Tree', 'Vanier Park, B.C.', NULL, '2015-01-01')
+, (   'bw011.jpg', 'blackwhite', 'Black & White', 'Come Into My Parlour', NULL, NULL, '2015-01-01')
+, (   'bw012.jpg', 'blackwhite', 'Black & White', 'Dunkin Duck', NULL, NULL, '2015-01-01')
+, (   'bw013.jpg', 'blackwhite', 'Black & White', NULL, 'Astoria, OR.', NULL, '2015-01-01')
+, (   'bw014.jpg', 'blackwhite', 'Black & White', 'Through the Looking Glass', 'Vanier Park, B.C.', NULL, '2015-01-01')
+, (   'bw015.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL, '2015-01-01')
+, (   'bw016.jpg', 'blackwhite', 'Black & White', NULL, 'Mulkiteo Ferry Terminal, WA', NULL, '2015-01-01')
+, (   'bw017.jpg', 'blackwhite', 'Black & White', 'Lion''s Gate Bridge (long exposure)', 'Vancouver, B.C.', NULL, '2015-01-01')
+, (   'bw018.jpg', 'blackwhite', 'Black & White', 'Lion''s Gate Bridge', 'Vancouver, B.C.', NULL, '2015-01-01')
+, (   'bw019.jpg', 'blackwhite', 'Black & White', 'Wired Up', NULL, NULL, '2015-01-01')
+, (   'bw020.jpg', 'blackwhite', 'Black & White', 'Mop Head', NULL, NULL, '2015-01-01')
+, (   'bw021.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL, '2015-01-01')
+, (   'bw022.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL, '2015-01-01')
+, (   'bw023.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL, '2015-01-01')
+, (   'bw024.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL, '2015-01-01')
+, (   'bw025.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL, '2015-01-01')
+, (   'bw026.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL, '2015-01-01')
+, (   'bw027.jpg', 'blackwhite', 'Black & White', NULL, NULL, NULL, '2015-01-01')
 
 ;
 

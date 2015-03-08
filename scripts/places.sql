@@ -46,7 +46,7 @@ INSERT INTO `photos`
 (`filename`, `foldername`, `category`, `description`, `location`, `date_taken`, `upload_date`) 
 VALUES
 
-  ('places001.jpg', 'places', 'places', 'St. Thomas', 'U.S. Virgin Islands', NULL, '2015-01-01')
+, ('places001.jpg', 'places', 'places', 'St. Thomas', 'U.S. Virgin Islands', NULL, '2015-01-01')
 , ('places002.jpg', 'places', 'places', 'Lion''s Gate Bridge', 'Vancouver, BC', NULL, '2015-01-01')
 , ('places003.jpg', 'places', 'places', NULL, 'Flase Creek, Vancouver, BC', NULL, '2015-01-01')
 , ('places004.jpg', 'places', 'places', 'Science World', 'False Creek, Vancouver, BC', NULL, '2015-01-01')

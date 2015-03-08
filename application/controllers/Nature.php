@@ -45,7 +45,6 @@ class Nature extends Application {
 	public function index()
 	{
             //Grabs photo information from database and puts it into array.
-            $this->db->where('category', 'Nature');
             $query = $this->db->get("photos");
             $pictures = $query->result_array();
             

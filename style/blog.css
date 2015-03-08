@@ -1,13 +1,13 @@
 /* Import "Julius Sans One" */
 @font-face {
 	font-family: "Julius Sans One";
-	src: url('/assets/fonts/JuliusSansOne-Regular.ttf');
+	src: url('../fonts/JuliusSansOne-Regular.ttf');
 }
 
 /* Import "Scriptina" */
 @font-face {
 	font-family: Scriptina;
-	src: url('/assets/fonts/scriptina.regular.ttf');
+	src: url('../fonts/scriptina.regular.ttf');
 	}
 
 /* set default fonts */
@@ -48,7 +48,7 @@ of everything. */
 	height: 160px;
 	width: 160px;
 	position: absolute;
-	background: url('/assets/images/logo1.png');
+	background: url('../images/logo1.png');
 	background-size: 160px 160px;
 	border: 2px solid #cccccc;
 	z-index: 100;
@@ -78,7 +78,7 @@ events in Internet explorer.*/
 #title {
 	width: 448px;
 	height: 92px;
-	background: url('/assets/images/title.png');
+	background: url('../images/title.png');
 	background-size: 448px 92px;
 	position: absolute;
 	right: 0;

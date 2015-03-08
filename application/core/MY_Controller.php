@@ -21,7 +21,6 @@ class Application extends CI_Controller {
         parent::__construct();
         $this->data = array();
         $this->data['pagetitle'] = 'Sliver of Light Photography';
-        $this->errors = array();
     }
     
     /**

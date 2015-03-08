@@ -1,5 +1,5 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# COMP 4711 - Assignment #1 - Team SoL
+#  COMP 4711 - Assignment #1 - Team SoL
 #
 # Members:
 #       Michael Chodolak
