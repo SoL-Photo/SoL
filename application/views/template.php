@@ -87,7 +87,7 @@ if (!defined('APPPATH'))
                     </li>
                     <li>
                         <div class="navbutton">
-                            <a href="signin#signInContainer"><p class="link">Sign In</p></a>
+                            <a href="/signin#signInContainer"><p class="link">Sign In</p></a>
                         </div>
 		</li>
                 </ul>

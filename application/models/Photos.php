@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This is a "CMS" model for blogposts.
+ * This is a "CMS" model for photos.
  *
  * @author Mae
  */
